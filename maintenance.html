@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Maintenance</title>
+    <style>
+        body{
+            position: relative;
+        }
+        .maintenance-section{
+            background-color: #dbdef2e3;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        i{
+            color: #1d2656;
+            font-size: 19em !important;
+            text-shadow: 8px 8px rgb(239 239 242);
+            padding-top: .3em;
+        }
+        h1{
+            font-family: 'Paytone One', sans-serif;
+            font-size: 2em;
+            text-transform: uppercase;
+            color: #1d2656;
+        }
+        p{
+            position: relative;
+            margin: 0 5vw 0 5vw;
+            font-size: 19px;
+            font-family: sans-serif;
+            text-transform: capitalize;
+        }
+        p::after{
+            content: '';
+            display: block;
+            width: 33vw;
+            height: 3px;
+            background-color: #1d2656;
+            position: absolute;
+            right: 0;
+            top: 50%;
+        }
+        p::before{
+            content: '';
+            display: block;
+            width: 33vw;
+            height: 3px;
+            background-color: #1d2656;
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+        @media (min-width: 320px) and (max-width: 750px) {
+            p::before,
+            P::after{
+                display: none;
+            }
+        }
+        @media (min-width: 750px) and (max-width: 1000px) {
+            p::before,
+            P::after{
+                width: 30vw;
+
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="maintenance-section">
+        <i class="fa fa-exclamation-triangle"></i>
+        <h1> Under Maintenance</h1>
+        <p>We Will be back Soon</p>
+    </section>
+</body>
+</html>
